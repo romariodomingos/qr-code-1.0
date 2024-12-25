@@ -1,0 +1,89 @@
+/* Importando a fonte Outfit */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Outfit', sans-serif;
+    background-color: #d6e2f0;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 50px; /* Espaço para o footer */
+}
+
+div {
+    width: 800px;
+    margin: 20px;
+}
+
+.form-qr-code {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 550px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.37);
+}
+
+img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.form-text-qr {
+    text-align: center;
+}
+
+p {
+    color: #68778d;
+    font-size: 15px;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer .attribution { 
+    font-size: 13px; 
+    color: #68778d;
+}
+
+footer .attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    .form-qr-code {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .form-text-qr {
+        font-size: 14px;
+    }
+
+    img {
+        width: 250px;
+    }
+}
